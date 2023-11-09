@@ -1,0 +1,672 @@
+
+<html style="scroll-behavior: smooth">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Το ιστολόγιο του προγραμματιστή — προγραμματισμός και αλγόριθμος</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link media="all" href="css/main.css" rel="stylesheet">
+    <link href="css/orderForm.css" media="all" rel="stylesheet" type="text/css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body class="home blog layout-rightbar is-open-modal">
+
+    <style>
+        .more-link {
+            text-transform: uppercase;
+        }
+
+        #order_form>input.submit-roulette {
+            font-size: 19px !important;
+        }
+
+        .card__item__sale .card__item__sale-100,
+        .card__item__sale .card__item__sale-50,
+        .card__item__sale .card__item__sale-30 {
+            top: 62% !important;
+            left: 50% !important;
+            transform: translate(-44%, -50%) !important;
+        }
+
+        .card__item {
+            padding: 0px !important;
+        }
+
+        body * {
+            font-family: Georgia, Times, 'Times New Roman', serif !important;
+            font-size: 22px !important;
+            line-height: 26px !important;
+
+        }
+
+        .contentBox:not(.card__instructions),
+        .sidebar,
+        .commit {
+            font-size: 22px !important;
+            line-height: 26px !important;
+        }
+
+        .card__counter {
+            text-align: center;
+        }
+
+        .ouimain-img {
+            position: relative;
+            top: -20px;
+            width: 25% !important;
+        }
+
+        .card__instructions {
+            font-size: 2rem;
+        }
+
+        .img11 {
+            display: block;
+            width: 100%;
+            max-width: 650px;
+        }
+
+        @media screen and (max-width: 780px) {
+            #main>main>article>div.entry-box.clearfix>center>div.order_block>div {
+                margin: -50px auto !important;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .content-img {
+                width: 100% !important;
+            }
+
+            #main>main>article>div.entry-box.clearfix>center>div.order_block>div>img {
+                margin: 40px auto !important;
+            }
+
+            .card__item__sale .card__item__sale-100,
+            .card__item__sale .card__item__sale-50,
+            .card__item__sale .card__item__sale-30 {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 15px !important;
+            }
+
+            #order_form>input.submit-roulette {
+                font-size: 15px !important;
+            }
+
+            #order_form input {
+                font-size: 21px;
+                padding: 15px;
+                border-radius: 3px;
+                border: 2px solid #e9d7dc;
+                max-width: 250px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+        }
+
+        .order_block img {
+            width: 30% !important;
+        }
+
+        #order_form {
+            margin: 0 auto !important;
+            background-image: none;
+        }
+        .ouimain-img img {
+            width: 100% !important;
+            margin-top: 20px !important;
+        }
+    </style>
+
+    <div class="wrapper clearfix">
+        <header id="header" class="clearfix">
+            <div class="header-top-wrap">
+                <div class="sitetitle maxwidth grid ">
+                    <div class="logo">
+                        <h1 id="logo">Το ιστολόγιο του προγραμματιστή</h1>
+                        <p class="sitedescription">προγραμματισμός και αλγόριθμος</p>
+                    </div>
+                </div>
+            </div>
+            <div class="topnav">
+                <a href="#form" style="text-decoration: none">
+                    <div id="mobile-menu" class="mm-active">Menu</div>
+                </a>
+                <nav>
+                    <ul class="top-menu maxwidth clearfix">
+                        <li id="menu-item-4684" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-4684">
+                            <a href="#form">Ιστολόγιο</a><span class="open-submenu"></span>
+                        </li>
+                        <li id="menu-item-6653" class="menu-item menu-item-type-post_type_archive menu-item-object-forum menu-item-has-children menu-item-6653">
+                            <a href="#form">Φόρουμ</a><span class="open-submenu"></span>
+                        </li>
+                        <li id="menu-item-6638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6638">
+                            <a title="Матрица профессиональных компетенций программиста" href="#form">Βιβλία</a><span class="open-submenu"></span>
+                        </li>
+                        <li id="menu-item-1726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1726"><a title="about_me" href="#form">Σχετικά με μένα</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children">
+                            <a href="#form">Προφίλ</a><span class="open-submenu"></span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="main" class="maxwidth clearfix">
+            <main class="content main-content">
+                <article class="post-7750 post type-post status-publish format-standard has-post-thumbnail category-rest tag-mssql tag-sql tag-t-sql tag-2444 tag-2452 tag-2450 anons">
+                    <h2>Η προστατίτιδα δεν είναι θανατική ποινή! Αυτό κατέστρεψε την οικογένειά μου, σκότωσε την υγεία μου, αλλά κατάφερα να νικήσω!</h2>
+                    <aside class="meta">
+                        <span class="date">
+                            <script>
+                                var appendNull = function(num) {
+                                    return num < 10 ? 0 + num.toString() : num;
+                                };
+                                d = new Date();
+                                p = new Date(d.getTime() + 0 * 86400000);
+                                monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+                                document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());
+                            </script>
+                        </span>
+                        <span class="category"><a href="#form" rel="category tag">για την υγεία</a></span>
+                    </aside>
+                    <div class="entry-box clearfix">
+                        <p><b>Γεια σας, αγαπητοί αναγνώστες του ιστολογίου μου. Για όσους δεν με ξέρουν, θα συστηθώ - με λένε Αλέξανδρος Σταθόπουλος, είμαι 49 ετών, δουλεύω ως προγραμματιστής όλη μου τη ζωή και τώρα εργάζομαι ήδη ως επικεφαλής του τμήματος ασφάλειας υπολογιστών. Αλλά σήμερα θέλω να σας μιλήσω όχι για το προγραμματισμό, αλλά για την υγεία. Συγκεκριμένα, σχετικά με την υγεία των ανδρών, δηλαδή την προστατίτιδα.</b></p>
+                        <picture>
+                            <source srcset="images/proger.png" type="image/webp">
+                            <img alt="img" loading="lazy" src="images/proger.png" data-meowmeow="true" data-woofwoof="false">
+                        </picture>
+                        <p>Αντιμετώπισα αυτό το πρόβλημα τον περασμένο Ιανουάριο. Εξαιτίας αυτής της ασθένειας, η γυναίκα μου με άφησε και κόντεψα να χάσω τη δουλειά μου. Αλλά κατάφερα να ξεπεράσω την ασθένεια και τώρα θέλω να μοιραστώ την ιστορία μου μαζί σας, ίσως μπορώ να βοηθήσω κάποιον. Ξέρω ότι πολλοί άντρες υποφέρουν από αυτή τη νόσο, απλά δεν συνηθίζεται να μιλάμε για αυτό το πρόβλημα ανοιχτά.</p>
+                        <p class="title"><b>Έναρξη της νόσου</b></p>
+                        <p>Όπως γνωρίζετε, οι προγραμματιστές και οι υπάλληλοι γραφείου, μαζί με τους οδηγούς, υποφέρουν από την προστατίτιδα πιο συχνά από άλλους, λόγω της καθιστικής ζωής και στασιμότητας του αίματος στην πύελο - έτσι μου το εξήγησε ο γιατρός. Εκτός όμως από την καθιστική ζωή, είχα περάσει και γρίπη.</p>
+                        <p>Όλα ξεκίνησαν με την συχνοουρία, κάθε επίσκεψη στην τουαλέτα ήταν ένα πραγματικό μαρτύριο - πόνος, τσούξιμο, μερικές φορές μέχρι δακρύων... Το άντεξα, όπως πολλοί, μέχρι τέλους. <b>Για το σεξ με τη γυναίκα μου ούτε συζήτηση, η ισχύς εξασθένησε και δεν είχα καμία ψυχική διάθεση.</b> Άρχισαν οι συγκρούσεις και τα σκάνδαλα. Σύντομα τσακωθήκαμε και η γυναίκα μου με άφησε.</p>
+                        <picture style="width: 100%; max-width: 700px">
+                            <source srcset="images/image1gr.jpg" type="image/webp" style="width: 100%; max-width: 700px">
+                            <img alt="img" loading="lazy" src="images/image1gr.jpg" style="width: 100%; max-width: 700px" data-meowmeow="true" data-woofwoof="false">
+                        </picture>
+                        <p>Όταν ο πυρετός ανέβηκε και ο πόνος στο κάτω μέρος της κοιλιάς έγινε αφόρητος, έπρεπε να καλέσουμε ασθενοφόρο. Μεταφέρθηκα στο νοσοκομείο. Εκεί αποδείχθηκε ότι η χρόνια προστατίτιδα είχε επιδεινωθεί. Μου έβαλαν ενδοφλέβια, μου έκαναν ενέσεις, βασικά με περιποιήθηκαν και με έστειλαν στο σπίτι.</p>
+                        <p>Ο γιατρός συνταγογράφησε ένα σωρό διαφορετικά φάρμακα, ξόδεψα όλες μου τις οικονομίες σε αυτά και ήμουν πεπεισμένος πως όλα αυτά σίγουρα θα με βοηθούσαν. Όμως πέρασαν μόνο δύο μήνες και η προστατίτιδα με χτύπησε με ανανεωμένο σθένος.</p>
+                        <p class="alert-block"><b>Στο επόμενο ραντεβού μου, οι γιατροί με τρόμαξαν πραγματικά, λέγοντας ότι τα φλεγμονώδη, άρρωστα κύτταρα του προστάτη θα μπορούσαν να μετατραπούν σε καρκίνο.</b></p>
+                        <p>Ο γιατρός μου πρότεινε μασάζ προστάτη και φυσικοθεραπεία. Έπρεπε να ξεπεράσω την αμηχανία, την ντροπή μου και να υποβληθώ σε 10 εξευτελιστικές διαδικασίες. Αλλά, δυστυχώς, τίποτα από αυτά δεν με βοήθησε, έγινε λίγο πιο ανώδυνο, αλλά με μικρό κρυολόγημα, η ασθένεια επέστρεψε με νέες εκπλήξεις - η ισχύς μου εξαφανίστηκε και η φλεγμονή έγινε ακόμα πιο ισχυρή, εξαιτίας αυτού απλά δεν μπορούσα να κοιμηθώ και φοβόμουν να πάω στην τουαλέτα.</p>
+                        <picture>
+                            <source srcset="images/image2gr.jpg" type="image/jpg">
+                            <img alt="img" loading="lazy" src="images/image2gr.jpg" data-meowmeow="true" data-woofwoof="false">
+                        </picture>
+                        <p class="title"><b>Η διάσωση των πνιγμένων είναι έργο των ίδιων των πνιγμένων</b></p>
+                        <p>Απευθύνθηκα στους προγραμματιστές συναδέλφους μου, σε ένα διεθνές φόρουμ και μίλησα ειλικρινά για το πρόβλημά μου. Στο φόρουμ επικοινώνησα με ανθρώπους από τις ΗΠΑ, το Ισραήλ, τη Γερμανία και άλλες ευρωπαϊκές χώρες.</p>
+                        <p>Αποδείχθηκε πως πολλοί από τους ανθρώπους δικής μας ειδικότητας, υπέφεραν από αυτή την ασθένεια. Αλλά έμειναν έκπληκτοι από τις μεθόδους της θεραπείας μου. Σε πολλούς φάνηκαν ξεπερασμένοι. Παραδόξως, άνθρωποι από διαφορετικές χώρες ομόφωνα, σαν να συμφωνούσαν, με συμβούλεψαν την ίδια θεραπεία - τις σταγόνες <a href="#form" style="color:blue;">PX-300</a>. Δεν είχα ξανακούσει γι'αυτές, ούτε τις είχα δει στα φαρμακεία. Δεν μου τις συνέστησε ούτε ένας γιατρός ή φαρμακοποιός.</p>
+                        <p>Βρήκα πολλές πληροφορίες σχετικά με αυτές στο Διαδίκτυο και ανακάλυψα ότι το προϊόν είναι πραγματικά ισχυρό. Παλαιότερα, όταν έψαχνα για πληροφορίες σχετικά με τους φυσικούς τρόπους θεραπείας της προστατίτιδας, συνέταξα μια λίστα με φυτά που χρησιμοποιούνται σε διάφορες χώρες για την ανακούφιση από τον πόνο και τη φλεγμονή στον προστάτη. Και πόσο ξαφνιάστηκα όταν είδα τα φυτά από αυτή τη λίστα στις σταγόνες <a href="#form" style="color:blue;">PX-300</a>.</p>
+                        <img alt="img" loading="lazy" src="prod.png" class="content-img">
+                        <p>Αποδείχθηκε ότι αυτό το προϊόν περιέχει τα ισχυρότερα φυσικά συστατικά, που καταπολεμούν ακόμη και την προχωρημένη προστατίτιδα. Και σε συνδυασμό, ενισχύουν τη δράση τους, γεγονός που σας επιτρέπει να απαλλαγείτε από την προστατίτιδα σε μόνο μια ολοκληρωμένη θεραπεία. Το προϊόν περιέχει:</p>
+                        <ul>
+                            <li><b>Guarana</b> — περιέχει βιταμίνες A, K, E, B, PP, καθώς και ψευδάργυρο, ασβέστιο και μαγνήσιο, το οποίο αυξάνει τα επίπεδα της τεστοστερόνης.</li>
+                            <li><b>Το εκχύλισμα ρίζας Sarsaparilla</b> —  έχει ισχυρή επίδραση στη ροή του αίματος στα όργανα της πυέλου - που είναι απαραίτητο για να εξασφαλιστεί η υψηλής ποιότητας και η μακροπρόθεσμη δραστικότητα.</li>
+                            <li><b>Saw Palmetto ή αλλιώς Serenoa</b> — διεγείρει τη ροή του αίματος στη λεκάνη και έχει ευεργετική επίδραση στον αδένα του προστάτη. Εξαλείφει τη φλεγμονή, τον πόνο και το κάψιμο κατά την ούρηση.</li>
+                            <li><b>Κράνμπερι (Cranberry)</b> — καταστρέφει τα βακτήρια, κάτι που είναι ιδιαίτερα σημαντικό για μια ασθένεια όπως η βακτηριακή προστατίτιδα.</li>
+                        </ul>
+                        <p>Τα παιδιά στο φόρουμ μου έλεγαν - πως απαλλάχτηκαν από την προστατίτιδα σε μία μόνο πορεία χρήσης των σταγόνων <a href="#form" style="color:blue;">PX-300</a>. Η σωτηρία βρέθηκε. Το μόνο που έμενε ήταν να αγοράσω αυτό το προϊόν. Αλλά μετά με περίμενε μια έκπληξη· δεν μπορούσα να το βρω στα φαρμακεία και δεν υπήρχε καν διαθέσιμο πουθενά για να το παραγγείλω. Και πάλι, χάρη στα παιδιά, που μου έδωσαν έναν σύνδεσμο για την επίσημη φόρμα παραγγελίας από τον κατασκευαστή, όπου μπόρεσα να παραγγείλω τις σταγόνες <a href="#form" style="color:blue;">PX-300</a> χωρίς το ΦΠΑ του φαρμακείου.</p>
+                        <p>Χρησιμοποιούσα τις σταγόνες <a href="#form" style="color:blue;">PX-300</a> σύμφωνα με τις οδηγίες χρήσης και ήδη την τρίτη μέρα μπορούσα να πάω στην τουαλέτα κανονικά,  χωρίς πόνο. Μετά από ένα μήνα ξέχασα εντελώς ότι είχα προστατίτιδα.</p>
+                        <p class="alert-block"><b>Σταμάτησα να ξυπνάω στη μέση της νύχτας για να πάω στην τουαλέτα, ο πόνος στη βουβωνική χώρα έφυγε, η δυναμικότητα επέστρεψε και η στύση μου έγινε πιο δυνατή από πριν! Ήταν καταπληκτικό συναίσθημα, κατάλαβα ότι ξαναζούσα!</b></p>
+                        <p>Πήρα τηλέφωνο τη γυναίκα μου και την κάλεσα στο εστιατόριο. Τα ξαναβρήκαμε και ζούμε ξανά μαζί. Δεν θυμάμαι πια την προστατίτιδα, την ξέχασα σαν κακό όνειρο!</p>
+                        <p>Είπα την ιστορία μου, γιατί ξέρω πώς είναι να υποφέρεις από το συνεχή πόνο, να τρέχεις συνεχώς στην τουαλέτα, να χάνεις την ισχύ και να χάνεις την αυτοπεποίθηση. Θέλω να σας βοηθήσω, αν αντιμετωπίζετε αυτή την ασθένεια.</p>
+                        <p class="text-big text-color-2"><b>Όσο οι σταγόνες <a href="#form" style="color:blue;">PX-300</a> είναι ακόμα σε προσφορά! Επιπλέον, ο κατασκευαστής συμμετέχει στο πρόγραμμα Men's Health και μπορείτε να τις αποκτήσετε στο πλαίσιο του προγράμματος με έκπτωση 50%.</b></p>
+                        <p class="text-big text-color-2"><b>Βιαστείτε, το πρόγραμμα θα ολοκληρωθεί σύντομα, η προσφορά θα διαρκέσει έως και τις <script>
+                            var appendNull = function(num) {
+                                return num < 10 ? 0 + num.toString() : num;
+                            };
+                            d = new Date();
+                            p = new Date(d.getTime() + 0 * 86400000);
+                            monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+                            document.write(appendNull(p.getDate()) + '/' + monthb[p.getMonth()] + '/' + p.getFullYear());
+                        </script>. Μη χάσετε την ευκαιρία να απαλλαγείτε για πάντα από την προστατίτιδα!</b></p>
+                        <p class="text-big text-color-2">
+                            <b>Για να αποκτήσετε τις σταγόνες <a href="#form" style="color:blue;">PX-300</a> με έκπτωση, συμπληρώστε την επίσημη φόρμα παραγγελίας παρακάτω και στη συνέχεια ένας σύμβουλος θα επικοινωνήσει μαζί σας, για να υπολογίσει την τιμή για εσάς και να απαντήσει σε όλες τις ερωτήσεις σας.</b>
+                        </p>
+                        <p class="text-big text-color-2">
+                            <b>ΠΡΟΣΟΧΗ! Προσοχή στις απομιμήσεις!</b>
+                        </p>
+                        <p class="text-big text-color-2">
+                            <b>Προϊόν στην Ελλάδα μπορεί να αποκτηθεί μόνο με τη συμπλήρωση της επίσημης φόρμας παραγγελίας.</b>
+                        </p>
+    
+    
+    
+                        <!--Form-->
+    
+                        <link rel="stylesheet" href="form/form.css">
+    
+                        <div id="form">
+        
+                            <div id="form_image">
+                                <div class="form_image_wrap_image">
+                                    <img src="prod.png" alt="">
+                                </div>
+                            </div>
+        
+        
+                            <div class="form_wrap" id="objectScrollAttention">
+                                <form method="POST" geo="gr" action="api.php"
+                                      onsubmit="return validate_form(this, 'Πληκτρολογηστε τον σωστο αριθμο τηλεφωνου');">
+                                    <label class="descount">Έκπτωση 50%</label>
+                
+                                    <div id="price">
+                                        <div class="price_new">
+                                            39 €
+                                        </div>
+                                        <div class="price_old">
+                                            78 €
+                                        </div>
+                                    </div>
+                
+                                    <center><label class="inp_name">Ονομα</label></center>
+                                    <input name="name" placeholder="" required="" type="text">
+                
+                                    <center><label class="inp_phone">Τηλέφωνο (ενεργό κινητό)
+                                    </label></center>
+                                    <input name="phone" placeholder="" required="" type="tel" id="phone">
+                
+                                    <input name="subid" type="hidden" value="{subid}">
+                                    <input name="px" type="hidden" value="{px}">
+                                    <input name="bayer" type="hidden" value="{bayer}">
+                                    <br>
+                                    <button type="submit" class="btnn">ΠΑΡΑΓΓΕΛΙΑ</button>
+                
+                                    <div class="sus"> 
+                                        <div class="sus_text">Προστασία Δεδομένων (τα δεδομένα είναι εμπιστευτικά)</div>
+                                    </div>
+            
+                                </form>
+                            </div>
+    
+                        </div>
+                        <br>
+                        <!--Form END-->
+                        
+                        
+
+                        <div class="comment-title">Σχόλια</div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture>
+                                        <source srcset="images/com-1.jpg" type="image/webp">
+                                        <img alt="img" loading="lazy" src="images/com-1.jpg" data-meowmeow="true">
+                                    </picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Ανδρέας Παπαδήμου</div>
+                                    <div>Ευχαριστούμε για το ενδιαφέρον άρθρο! Η θεραπεία σε μας είναι πραγματικά πολύ ακριβή και δεν βοηθά. Παρήγγειλα τις σταγόνες <a href="#form" style="color:blue;">PX-300</a>, θα τις δοκιμάσω.</div>
+                                    <!-- <picture alt="img"><source srcset="images/o1.webp" type="image/webp" alt="img"><img src="images/o1.jpg" alt="img" data-meowmeow="true"></picture> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture>
+                                        <source srcset="images/com-2.jpg" type="image/webp">
+                                        <img alt="img" loading="lazy" src="images/com-2.jpg" data-meowmeow="true">
+                                    </picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Δημήτρης Αθανασίου</div>
+                                    <div>Συμφωνώ απολύτως! Οι σταγόνες <a href="#form" style="color:blue;">PX-300</a> είναι ένα θαυματουργό προϊόν. Τις αγόρασα στη Γερμανία όταν πήγα διακοπές το περασμένο καλοκαίρι. Πριν από αυτό υπέφερα από χρόνια προστατίτιδα, περίπου 10 χρόνια. Προσπάθησα να την θεραπεύσω, αλλά όπως γράφτηκε παραπάνω, αυτή η θεραπεία έδωσε μόνο ένα προσωρινό αποτέλεσμα. Με τη χρήση των σταγόνων <a href="#form" style="color:blue;">PX-300</a>, η προστατίτιδα εξαφανίστηκε εντελώς. Περισσότερο από έξι μήνες δεν έγινε εμφανές. Προηγουμένως, μπορούσα μόνο να ονειρευτώ τέτοιο αποτέλεσμα. Συνιστώ τις σταγόνες <a href="#form" style="color:blue;">PX-300</a> σε όλους τους άνδρες. Θα βοηθήσουν!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture alt="img"><source srcset="images/m_3.webp" type="image/webp" alt="img"><img alt="img" loading="lazy" src="images/m_3.jpg" data-meowmeow="true"></picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Λεωνίδας Παπανδρέου</div>
+                                    <div>Παρήγγειλα. Πράγματι, απέκτησα ένα πακέτο σταγόνες <a href="#form" style="color:blue;">PX-300</a> με έκπτωση 50%))) Έμεινα με ευχάριστη έκπληξη. Ευχαριστώ!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture>
+                                        <source srcset="images/com-3.jpg" type="image/webp">
+                                        <img alt="img" loading="lazy" src="images/com-3.jpg" data-meowmeow="true">
+                                    </picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Μάρκος Βολιώτης</div>
+                                    <div>Έχω και εγώ την εμπειρία στη θεραπεία της προστατίτιδας με αυτό το προϊόν. Το αγόρασα, μόνο που τότε δεν υπήρχαν προσφορές, και μου κόστισε περίπου 100 ευρώ. Αλλά δεν πειράζει, το κυριότερο είναι ότι με βοήθησε να απαλλαγώ από την προστατίτιδα σε περίπου 3 εβδομάδες,  χωρίς κανένα μασάζ.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block reply">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture alt="img"><source srcset="images/m_6.webp" type="image/webp" alt="img"><img alt="img" loading="lazy" src="images/m_6.jpg" data-meowmeow="true"></picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Αλέξανδρος Στάμου</div>
+                                    <div>Παρήγγειλα. Παραδόθηκε την επόμενη μέρα, κατευθείαν στο σπίτι μου.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture alt="img"><source srcset="images/m_39.webp" type="image/webp" alt="img"><img alt="img" loading="lazy" src="images/m_39.jpg" data-meowmeow="true"></picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Σωκράτης Τσούλφας</div>
+                                    <div>Κάποτε παρακολούθησα ένα τηλεοπτικό πρόγραμμα για τη φαρμακευτική επιχείρηση. Κάτι σαν ερευνητική δημοσιογραφία. Μίλησαν επίσης για αυτό το προϊόν. Ότι προς το παρόν υπάρχει, αλλά σύντομα μπορεί να μην υπάρχει. Πρέπει να το πάρω όσο υπάρχει.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture>
+                                        <source srcset="images/com-4.jpg" type="image/webp">
+                                        <img alt="img" loading="lazy" src="images/com-4.jpg" data-meowmeow="true">
+                                    </picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Παναγιώτης Παπαγεωργίου</div>
+                                    <div>Έχω χρόνια προστατίτιδα από τα 28 μου. Τώρα είμαι 41. Σε αυτό το διάστημα την θεράπευσα δύο φορές, όταν υπήρξαν οι σοβαρές παροξύνσεις. Την τελευταία φορά, που οι γιατροί μετά βίας με έσωσαν. Είπαν ότι λίγο ακόμα και η προστατίτιδα θα είχε μετατραπεί σε καρκίνο του προστάτη. Γι'αυτό, συμβουλεύω όλους όσους έχουν προστατίτιδα να απαλλαγούν από αυτήν όσο το δυνατόν νωρίτερα. Αυτή είναι μια πολύ επικίνδυνη ασθένεια.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture alt="img"><source srcset="images/5.jpg" type="image/webp" alt="img"><img alt="img" loading="lazy" src="images/5.jpg" data-meowmeow="true"></picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Ειρήνη Καρά</div>
+                                    <div>Πρέπει να παραγγείλω αυτό το προϊόν για τον άντρα μου. Ευχαριστώ!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture alt="img"><source srcset="images/m_8.webp" type="image/webp" alt="img"><img alt="img" loading="lazy" src="images/m_8.jpg" data-meowmeow="true"></picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Γιάννης Στεφανίδης</div>
+                                    <div>Το αγόρασα. Και, πράγματι, βγήκε με έκπτωση 50%. Δεν υπήρξαν ποτέ τέτοιες προσφορές. Ευχαριστώ τους κατασκευαστές!</div>
+                                    <!-- <picture alt="img"><source srcset="images\zhivaya3.webp" type="image/webp" alt="img"><img src="images\zhivaya3.jpg" alt="img" data-meowmeow="true"></picture> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture>
+                                        <source srcset="images/com-5.jpg" type="image/webp">
+                                        <img alt="img" loading="lazy" src="images/com-5.jpg" data-meowmeow="true">
+                                    </picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Γιώργος Φαλτσέτας</div>
+                                    <div>Οι σταγόνες <a href="#form" style="color:blue;">PX-300</a> είναι το καλύτερο προϊόν από όλα! Συμφωνώ με τον συγγραφέα του άρθρου και όλους τους σχολιαστές που τις επαίνεσαν. Τις χρησιμοποίησα πριν 3 μήνες περίπου. Η προστατίτιδα έχει φύγει τελείως! Υπήρχε για αρκετά χρόνια, εξαιτίας της το πέος μου δεν στεκόταν καλά και η εκσπερμάτωση γινόταν γρήγορα. Τώρα όλα έχουν επιστρέψει στο φυσιολογικό.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture alt="img"><source srcset="images/m_10.webp" type="image/webp" alt="img"><img alt="img" loading="lazy" src="images/m_10.jpg" data-meowmeow="true"></picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Σάββας Πετρόπουλος</div>
+                                    <div>Έλαβα τις σταγόνες <a href="#form" style="color:blue;">PX-300</a> χθες και αρχίζω να τις παίρνω σήμερα.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture>
+                                        <source srcset="images/com-6.jpg" type="image/webp">
+                                        <img alt="img" loading="lazy" src="images/com-6.jpg" data-meowmeow="true">
+                                    </picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Μπάμπης Κανέλλης</div>
+                                    <div>Διάβασα περισσότερα για τις σταγόνες <a href="#form" style="color:blue;">PX-300</a>. ΕΝΤΥΠΩΣΙΑΚΟ! Παρήγγειλα. Υποσχέθηκαν ότι θα τις φέρουν στο σπίτι αύριο και θα πληρώσω κατά την παράδοση. Πολύ βολικό.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture>
+                                        <source srcset="images/com-7.jpeg" type="image/webp">
+                                        <img alt="img" loading="lazy" src="images/com-7.jpeg" data-meowmeow="true">
+                                    </picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Κώστας Ελευθερίου</div>
+                                    <div>Παιδιά, αυτό είναι πραγματικά το κάτι άλλο! Τις αγόρασα την περασμένη εβδομάδα. Τώρα δεν έχει μείνει ούτε ένα σύμπτωμα της προστατίτιδας. Ο πόνος εξαφανίστηκε, σταμάτησα να τρέχω συχνά στην τουαλέτα και ο πόνος κατά την ούρηση εξαφανίστηκε επίσης. Επιπλέον, η ισχύς έχει βελτιωθεί αισθητά και η διάρκεια του σεξ έχει αυξηθεί. Αισθάνομαι υπέροχα. Με την έκπτωση 50% αξίζει σίγουρα να τις αγοράσετε. Ναι, και θα έδινα και 100 ευρώ γι' αυτό το προϊόν. Η αποτελεσματικότητα του προϊόντος ήταν ευχάριστη έκπληξη για εμένα.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture alt="img"><source srcset="images/m_13.webp" type="image/webp" alt="img"><img alt="img" loading="lazy" src="images/m_13.jpg" data-meowmeow="true"></picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Μιχάλης Βασιλάκης</div>
+                                    <div>Ναι, μου το συνέστησαν ως αποτελεσματικό προϊόν για την προστατίτιδα. Αλλά δεν μπορούσα να το βρω πουθενά. Σας ευχαριστώ για την ευκαιρία να το παραγγείλω, και μάλιστα με την προσφορά.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-block">
+                            <div class="comment-item">
+                                <div class="user-ava">
+                                    <picture alt="img"><source srcset="images/m_14.webp" type="image/webp" alt="img"><img alt="img" loading="lazy" src="images/m_14.jpg" data-meowmeow="true"></picture>
+                                </div>
+                                <div class="user-info">
+                                    <div>Παύλος Αθανασιάδης</div>
+                                    <div>Αυτό είναι που χρειάζομαι. Δεν αντέχω τον πόνο και έχω ήδη βαρεθεί να τρέχω στην τουαλέτα κάθε 2 λεπτά... Έχω προβλήματα και με τη γυναίκα μου. Είμαι πολύ κουρασμένος.</div>
+<!--                                    <picture alt="img"><source srcset="images/o2.webp" type="image/webp" alt="img"><img src="images/o2.jpg" alt="img" data-meowmeow="true"></picture>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="text-center">
+                        <a href="#form" class="more-link">ΠΑΡΑΓΓΕΛΙΑ</a>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <div id="hiddenDiv" style="display:none;"></div>
+    <!--<div style="display:none" class="fadepopup">
+        <div id="kmacb-form" class="modalx kmacb-form kmacb-form2 eoxp">
+            <div class="modal-block">
+                <div class="oui">
+                    <div class="ouimain">
+                        <p class="ouimainp">Вы из г.<span class="geocity">Москва</span>? Подождите!
+                        </p>
+                        <div class="ouimain-text-img">
+                            <div class="ouimain-img">
+                                <picture style="width: 75%;"><source srcset="images/tov.webp" type="image/webp" style="width: 75%;"><img src="images/tov.png" style="width: 75%;" data-meowmeow="true"></picture>
+                            </div>
+                            <div class="ouimain-text" style="width: 65%; margin-top: 4%;">
+                                <p style="text-indent:0px;">Для Вас сейчас действует специальное ограниченное
+                                    предложение</p>
+                                <p style="text-indent:0px;">
+                                    Только до <script>
+                                        d = new Date();
+                                        p = new Date(d.getTime() + (86400 * 1000 * 1));
+                                        monthA =
+                                            "января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря"
+                                            .split(",");
+                                        document.write(p.getDate() + " " + monthA[p.getMonth()] + " " + p
+                                            .getFullYear()) + " г.";
+                                    </script> вы можете получить <a href="#form" style="color:blue;">PX-300</a> по акции!
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#form" style="display: block;"><input type="button" value="Узнать подробнее"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="eeee"></div>
+
+    
+
+    
+<script type="text/javascript" src="libs/js/gdpr.js"></script>
+<link rel="stylesheet" href="libs/js/gdpr.css">
+<script>
+		var phonePattern = {
+			'fr': '+33 ___ ___ __ __',
+			'de': '+49 ___ ____ ?__',
+			'at': '+43 ____ ____ ?__',
+			'ch': '+41 __ ___ __ __ ?__',
+			'ru': '+7 (___) ___-__-__',
+			'ua': '+38-___-___-__-__',
+			'by': '+375 ___ ___ ___',
+			'kz': '+7 ___ ___ ____',
+			'kg': '+___ ___ __ __ __',
+			'md': '0 ___ _____',
+			'az': '+___-__-___-__-__',
+			'ge': '+995 ___ __ __ __',
+			'es': '+34 ___ __ __ __',
+			'pe': '+51 ___ ___ _?_',
+			'cl': '+56 _ ____ ____',
+			'ar': '+54 __ ____ ____',
+			'co': '+57 _______??_',
+			'mx': '+52 __ ____ ____',
+			'it': '+39-___-___-____',
+			'esp': '+34 ___ __ __ __',
+			'pt': '+351 ___ ___ ___',
+			'br': '+55 __ ___?_ ____',
+			'prt': '+351 ___ ___ ___',
+			'id': '+62 ___ ___ ___',
+			'gr': '+30 ___ _______',
+			'cy': '+357 __ ______',
+			'ro': '+40 ___ ___ __? _',
+			'bg': '+359 ___ __ __? _',
+			'cz': '+420 ___ ___ ___',
+			'sk': '+421 ___ ___ ___',
+			'si': '+386 _ ___ __ __',
+			'pl': '+48 ___ ___ ___',
+			'al': '+355 __ ___ ___?_',
+			'rs': '+381 __ _____?_',
+			'ph': '+63 _ ____ __?_',
+			'hu': '+36 _ ___ ____',
+			'hr': '+385 _ ____ __?_',
+			'ba': '+387 __ ______',
+			/* --- */
+		}
+
+		const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+		//функция на проверку соответствия количества введенных в инпут символов, количеству необходимых в маске
+		function validate_form(form, alert_text = "Please enter valid phone number") {
+			var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+				pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+			if (input_ln >= pattern_ln) return true;
+			else { alert(alert_text); return false; }
+		}
+
+		//сама маска, срабатывающая от ивентов ввода, фокуса, потери фокуса и нажатия кнопки мыши
+		document.addEventListener("DOMContentLoaded", function () {
+
+			var isTimeoutSeted = false;
+			var inputInterval;
+
+			function createInterval(input) {
+				if (!isTimeoutSeted) {
+					isTimeoutSeted = true;
+
+					inputInterval = setInterval(() => {
+						input.selectionStart = input.value.length
+						input.setSelectionRange(input.value.length, input.value.length);
+					}, 15)
+				}
+			}
+
+			function deleteInterval() {
+				clearInterval(inputInterval)
+				isTimeoutSeted = false;
+			}
+
+			function setSelectionStart(input) {
+				input.selectionStart = input.value.length
+			}
+
+			function mask(event) {
+				var input = event.currentTarget;
+				var geo = input.form.getAttribute('geo');
+				var matrix = phonePattern[geo];
+				var i = 0;
+				var def = matrix.replace(/\D/g, "");
+				var val = input.value.replace(/\D/g, "");
+
+				if (!event.type == "blur") {
+					setSelectionStart(input)
+				}
+
+				// Ставим интервал для инпута
+				createInterval(input)
+
+				if (event.type == "blur") {
+					// Сбрасываем интервал для инпута
+					deleteInterval()
+					if (input.value.length == 2) {
+						input.value = ""
+					}
+				}
+
+				if (def.length >= val.length) {
+					val = def
+				};
+
+				input.value = matrix.replace(/./g, function (a) {
+					return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+				});
+
+
+			};
+
+			inputs.forEach(input => {
+				input.addEventListener("input", mask, false);
+				input.addEventListener("blur", mask, false);
+				input.addEventListener("focus", mask, false);
+			})
+		});
+
+		$(document).ready(function () {
+			// Load GDPR
+			$(document).gdprCookieLaw({
+				moreLinkHref: '/privacypolicy',
+				theme: 'theme-1',
+				position: 'bottom-right',
+				width: '760px',
+				margin: '15px',
+				animation: 'fade-slide',
+				btnAcceptText: 'Ok'
+			});
+		});
+
+</script>
+
+</body>
+
+</html>
